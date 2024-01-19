@@ -1,0 +1,93 @@
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -novopt -suppress 12110 top 
+# Start time: 10:58:16 on Nov 29,2023
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing D:/Scaledge/Questa_Sim_work/SV_Projects/RAM/SIM/work.ram_inf
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.ram_inf
+# Refreshing D:/Scaledge/Questa_Sim_work/SV_Projects/RAM/SIM/work.ram_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading work.ram_pkg
+# Loading work.top
+# Refreshing D:/Scaledge/Questa_Sim_work/SV_Projects/RAM/SIM/work.ram
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading work.ram
+add wave -position insertpoint sim:/top/pinf/*
+add wave -position insertpoint sim:/top/dut/*
+run -all
+# GEN -> write:[1], addr:[10], din:[25c08e4b]
+# GEN -> write:[1], addr:[c], din:[31d7d8a1]
+# GEN -> write:[1], addr:[9], din:[6ac0f375]
+# GEN -> write:[1], addr:[d], din:[984c760b]
+# GEN -> write:[1], addr:[15], din:[9f8e84e6]
+# GEN -> write:[1], addr:[d], din:[69776e2]
+# GEN -> write:[1], addr:[4], din:[88a08be5]
+# GEN -> write:[1], addr:[3], din:[8a855a3b]
+# GEN -> write:[1], addr:[19], din:[ff142667]
+# GEN -> write:[1], addr:[e], din:[98cbda7e]
+# GEN -> read:[0], addr:[10]
+# GEN -> read:[0], addr:[c]
+# GEN -> read:[0], addr:[9]
+# GEN -> read:[0], addr:[d]
+# GEN -> read:[0], addr:[15]
+# GEN -> read:[0], addr:[d]
+# GEN -> read:[0], addr:[4]
+# GEN -> read:[0], addr:[3]
+# GEN -> read:[0], addr:[19]
+# GEN -> read:[0], addr:[e]
+# DRV <- write:[1], addr:[10],din:[25c08e4b]
+# MON <- read:[0],addr:[0],dout:[0]
+# MON <- write:[1],addr:[10],din:[0]
+# DRV <- write:[1], addr:[c],din:[31d7d8a1]
+# DRV <- write:[1], addr:[9],din:[6ac0f375]
+# MON <- write:[1],addr:[10],din:[25c08e4b]
+# MON <- write:[1],addr:[10],din:[25c08e4b]
+# DRV <- write:[1], addr:[d],din:[984c760b]
+# DRV <- write:[1], addr:[15],din:[9f8e84e6]
+# MON <- write:[1],addr:[c],din:[31d7d8a1]
+# MON <- write:[1],addr:[9],din:[6ac0f375]
+# DRV <- write:[1], addr:[d],din:[69776e2]
+# DRV <- write:[1], addr:[4],din:[88a08be5]
+# MON <- write:[1],addr:[d],din:[984c760b]
+# MON <- write:[1],addr:[15],din:[9f8e84e6]
+# DRV <- write:[1], addr:[3],din:[8a855a3b]
+# DRV <- write:[1], addr:[19],din:[ff142667]
+# MON <- write:[1],addr:[d],din:[69776e2]
+# MON <- write:[1],addr:[4],din:[88a08be5]
+# DRV <- write:[1], addr:[e],din:[98cbda7e]
+# DRV <- read:[0],addr:[10],dout:[0]
+# MON <- write:[1],addr:[3],din:[8a855a3b]
+# MON <- write:[1],addr:[19],din:[ff142667]
+# DRV <- read:[0],addr:[c],dout:[0]
+# DRV <- read:[0],addr:[9],dout:[0]
+# MON <- read:[1],addr:[e],dout:[0]
+# MON <- read:[0],addr:[10],dout:[0]
+# DRV <- read:[0],addr:[d],dout:[25c08e4b]
+# DRV <- read:[0],addr:[15],dout:[31d7d8a1]
+# MON <- read:[0],addr:[c],dout:[25c08e4b]
+# MON <- read:[0],addr:[9],dout:[31d7d8a1]
+# DRV <- read:[0],addr:[d],dout:[6ac0f375]
+# DRV <- read:[0],addr:[4],dout:[69776e2]
+# MON <- read:[0],addr:[d],dout:[6ac0f375]
+# MON <- read:[0],addr:[15],dout:[69776e2]
+# DRV <- read:[0],addr:[3],dout:[9f8e84e6]
+# ** Note: $finish    : ../TOP/top.sv(50)
+#    Time: 200 ns  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at ../TOP/top.sv line 50
+# End time: 10:59:56 on Nov 29,2023, Elapsed time: 0:01:40
+# Errors: 0, Warnings: 1
